@@ -90,6 +90,33 @@
 .uparrow::before{
     content: "\e906";
 }
+.tenji{
+    font-family: icon;
+    padding: 0 10px 0 0;
+    letter-spacing: 0.05em;
+    font-size: 1.4rem;
+}
+.tenji::before{
+    content: "\e90c";
+}
+.session{
+    font-family: icon;
+    padding: 0 10px 0 0;
+    letter-spacing: 0.05em;
+    font-size: 1.4rem;
+}
+.session::before{
+    content: "\e90d";
+}
+.contest{
+    font-family: icon;
+    padding: 0 10px 0 0;
+    letter-spacing: 0.05em;
+    font-size: 1.4rem;
+}
+.contest::before{
+    content: "\e90b";
+}
 
 
 
@@ -121,6 +148,9 @@ li{
     position: relative;
     top: 0;
     left: 0;
+}
+.section > .container{
+    padding: 80px 80px 100px 80px;
 }
 
 .header{
@@ -353,7 +383,6 @@ li{
 /*about_event*/
 .about_event > .container{
     background-color: #f2f4f7;
-    padding: 80px 80px 100px 80px;
 }
 .about_event::after{
     content: "";
@@ -483,7 +512,6 @@ li{
 /*program*/
     .program .container{
         background-color: #262626;
-        padding: 80px 50px 100px 50px;
     }
     .program .container .title::before{
         background-color: #fafafa;
@@ -530,7 +558,6 @@ li{
 /*satellite_event*/
 
 .satellite_event .container{
-    padding: 80px 80px 100px 80px;
     background-image: url("web_picture/bg_dotted@2x.png");
     background-size: 8px;
 }
@@ -570,7 +597,6 @@ li{
 
 /*event_outline*/
 .event_outline .container{
-    padding: 80px 80px 0 80px;
     background: #f2f4f7;
 }
 .event_outline::after{
@@ -701,3 +727,390 @@ address span{
     height: 40px;
 }
 /*footer*/
+
+
+
+
+
+/*outline_view*/
+.outline_view{
+    background: #111111;
+    width: 100%;
+    height: 360px;
+    position: relative;
+    z-index: 1;
+}
+.outline_view .content{
+    position: absolute;
+    z-index: 4;
+    color: #fafafa;
+    letter-spacing: 0.025em;
+    font-size: 4.8rem;
+    font-weight: bold;
+    line-height: 1;
+    left: 50px;
+    bottom: 80px;
+}
+.picture_mask{
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    opacity: 0.35;
+    position: absolute;
+    z-index: 2;
+}
+.outline_mask{
+    background-image: url("web_picture/img_header_outline@2x.jpg");
+
+}
+.timetable_mask{
+    background-image: url("web_picture/img_header_timetable@2x.jpg");
+}
+.session_mask{
+    background-image: url("web_picture/img_header_session@2x.jpg");
+}
+/*outline_view*/
+
+/*ORF*/
+.ORF p{
+    padding-left: 60px;
+    font-family: "Roboto Mono Light";
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+/*ORF*/
+
+/*Theme*/
+.theme::after{
+    content: "";
+    background-color: #5ab431;
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.theme .content{
+    padding: 80px 100px;
+}
+.theme .image{
+    background-image: url("web_picture/img_labis@2x_en.jpg");
+    margin-bottom: 30px;
+    height: 22vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+}
+.theme p{
+    line-height: 1.6;
+    font-family: "Roboto Mono Light";
+}
+.theme .author{
+    margin-top: 3em;
+    color: #a6a6a6;
+}
+/*Theme*/
+
+/*Planning_Committee*/
+.Planning_Committee .container{
+    background: #262626;
+}
+.Planning_Committee .title::before{
+    background-color: #fafafa;
+}
+.chair{
+    display: table;
+}
+.chair .intro{
+    display: table-cell;
+}
+.chair .image{
+    display: table-cell;
+    width: 240px;
+    height: 240px;
+    vertical-align: top;
+}
+.chair .image div{
+    width: 240px;
+    height: 240px;
+    background-image: url("web_picture/1@2x.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.chair .label{
+    letter-spacing: 0.025em;
+    background: #111;
+    font-size: 1.7rem;
+    padding: 5px 10px;
+    color: #fafafa;
+    display: inline-block;
+}
+.chair .pro_name{
+    margin-top: 2em;
+    margin-bottom: 4em;
+}
+.chair .name_title{
+    display: flex;
+    align-items: center;
+}
+.chair .name{
+    font-size: 2rem;
+    padding-right: 0.5em;
+}
+.icon{
+    display: inline-block;
+    width: 24px;
+    margin-right: 10px;
+}
+.chair .post{
+    padding: 1em 0 0 0;
+    letter-spacing: 0em;
+    line-height: 1.5;
+    font-size: 1.6rem;
+    color: #a6a6a6;
+}
+.chair p{
+    font-family: "Roboto Mono Light";
+    line-height: 1.6;
+    margin-bottom: 1em;
+}
+.chair a{
+    font-family: "Roboto Mono Light";
+    font-size: 1.3rem;
+    padding-right: 10px;
+    color: #218bee;
+}
+.chair a::after{
+    font-family: icon;
+    content: "\e90a";
+    padding-left: 5px;
+    font-size: 1.2rem;
+    color: #222;
+}
+.memebers{
+    margin-top: 30px;
+    border-bottom: 2px dotted #111;
+    border-top: 2px dotted #111;
+    padding: 30px 0;
+    display: flex;
+}
+.memebers .avatar{
+    flex: 3;
+}
+.avatar li{
+    display: inline;
+}
+.avatar a{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+}
+.memebers .Hyperlink{
+    flex: 2;
+    height: 100%;
+    margin: auto 0;
+}
+/*Planning_Committee*/
+
+
+/*sponsor*/
+.sponsor{
+    background-color: #f2f4f7;
+}
+.sponsor_bar{
+    width: 100%;
+}
+.sponsor_item{
+    width: 100%;
+}
+.sponsor .name{
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+.sponsor h3{
+    margin-bottom: 30px;
+}
+.sponsor li{
+    margin-bottom: 50px;
+    padding: 0 30px;
+}
+.sponsor ul{
+    margin: 0 -30px;
+}
+.sort::before,
+.sort::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.sort li{
+    width: 33.3%;
+    float: left;
+}
+.sort image{
+    width: 100%;
+    height: 100%;
+}
+.sort span{
+    display: block;
+    background-size: cover;
+}
+/*sponsor*/
+
+/*policy*/
+.policy .arrow_contain{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 40px;
+    overflow: hidden;
+}
+/*policy*/
+
+/*mask*/
+.mask{
+    position: fixed;
+    top: 100%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #f2f4f7;
+    z-index: 3;
+}
+/*mask*/
+
+/*session*/
+    /*sortwrap*/
+    .sortwrap{
+        position: relative;
+        z-index: 8;
+        background: #fff;
+        height: 100px;
+    }
+    .sortwrap::before,
+    .sortwrap::after{
+        content: "";
+        clear: both;
+    }
+    .sortbody{
+        position: relative;
+        width: 33.333%;
+        float: left;
+        background: #fff;
+    }
+    .date_icon{
+        font-family: icon;
+        height: 100px;
+        position: absolute;
+        font-size: 2rem;
+        width: 50px;
+        top: 0;
+        left: 0;
+        text-align: center;
+        line-height: 100px;
+        display: block;
+        color: #777;
+    }
+    .date_icon::before{
+        content: "\e916";
+    }
+    .session_icon{
+        font-family: icon;
+        height: 100px;
+        position: absolute;
+        font-size: 2rem;
+        width: 50px;
+        top: 0;
+        left: 0;
+        text-align: center;
+        line-height: 100px;
+        display: block;
+        color: #777;
+    }
+    .session_icon::before{
+        content: "\e90d";
+    }
+    .search_icon{
+        font-family: icon;
+        height: 100px;
+        position: absolute;
+        font-size: 2rem;
+        width: 50px;
+        top: 0;
+        left: 0;
+        text-align: center;
+        line-height: 100px;
+        display: block;
+        color: #777;
+    }
+    .search_icon::before{
+        content: "\e8b6";
+    }
+
+    .sortwrap .pull_down_head{
+        letter-spacing: 0.05em;
+        padding: 0 30px 0 50px;
+        border-bottom: 1px solid #f2f2f2;
+        height: 100px;
+        line-height: 100px;
+        color: #222;
+        position: relative;
+        display: block;
+        cursor: pointer;
+    }
+    .sortwrap .context{
+        font-size: 1.4rem;
+        font-weight: bold;
+    }
+    .sortwrap .down-arrow{
+        color: #222;
+        background: #fafafa;
+        border-left: 1px solid #f2f2f2;
+        border-right: 1px solid #f2f2f2;
+        height: 100px;
+        line-height: 100px;
+        float: right;
+        width: 40px;
+        text-align: center;
+    }
+    .sortwrap .down-arrow:hover{
+        animation: none;
+    }
+    .search_box{
+        border: none;
+        width: 100%;
+        padding: 0 30px 0 50px;
+        line-height: 100px;
+        color: #222;
+        font-size: 1.4rem;
+        font-weight: bold;
+        outline: none;
+    }
+    /*sortwrap*/
+    /*session_list*/
+    .session_list::after{
+        content: "";
+        display: block;
+        height: 300px;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        background-color: #0065b4;
+    }
+    .session_title{
+        margin-bottom: 60px;
+        position: relative;
+        z-index: 2;
+        display: table;
+        width: 100%;
+        height: 100%;
+    }
+    /*session_list*/
+/*session*/
